@@ -19,4 +19,15 @@
         android:textAllCaps="false"
         android:theme="@style/styled_raised_pressed" />
 
+    <Button
+        android:id="@+id/btn_round"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/top_margin"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin"
+        android:text="Round Corners"
+        android:textAllCaps="false"
+        android:theme="@style/styled_raised_pressed" />
+
 </LinearLayout>
