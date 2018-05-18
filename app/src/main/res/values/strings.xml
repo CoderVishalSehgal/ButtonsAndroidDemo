@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Buttons-Android-Demo</string>
+    <string name="raised_button">Raised Button</string>
+    <string name="normal">Normal</string>
+    <string name="pressed">Pressed</string>
+    <string name="disabled_button_styled">Disabled Button Styled</string>
+    <string name="disabled">Disabled</string>
+    <string name="flat_button">Flat Button</string>
+    <string name="md">Material Design</string>
 </resources>

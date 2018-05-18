@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/raised_button"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/top_margin">
+
+            <Button
+                android:id="@+id/normal_raised"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:text="@string/normal"
+                android:theme="@style/normal_btn" />
+
+
+            <Button
+                android:id="@+id/styled_raised"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:text="@string/pressed"
+                android:theme="@style/styled_raised_pressed" />
+
+            <Button
+                android:id="@+id/disable_raised"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/disabled"
+                android:theme="@style/normal_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/top_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/flat_button"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/top_margin">
+
+            <Button
+                android:id="@+id/flat_normal"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:text="@string/normal"
+                android:textColor="@color/colorPrimary" />
+
+
+            <Button
+                android:id="@+id/styled_flat"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:text="@string/pressed"
+                android:theme="@style/flat_button_pressed" />
+
+
+            <Button
+                android:id="@+id/flat_disabled"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/disabled"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
